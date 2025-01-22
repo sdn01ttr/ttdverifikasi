@@ -25,7 +25,7 @@
         }
 
         .container img {
-            width: 150px;
+            width: 100px;
             height: auto;
             margin-bottom: 20px;
         }
@@ -39,7 +39,7 @@
         .signature {
             font-size: 16px;
             font-weight: bold;
-            color: #012501;
+            color: #006400;
             background-color: #E6F4E9;
             padding: 5px;
             border-radius: 5px;
@@ -51,15 +51,45 @@
             color: #333333;
             margin-top: 5px;
         }
+
+        .input-container {
+            margin-top: 20px;
+        }
+
+        .input-container input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .input-container button {
+            width: 150%;
+            padding: 10px;
+            background-color: #006400;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .input-container button:hover {
+            background-color: #004d00;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <img src="ttd.png" alt="Signature">
         <div class="text">Dokumen ini ditandatangani oleh:</div>
-        <div>
-            <div class="signature">Sarono, S.Pd.SD</div>
-            <div class="nip">NIP: 197006121992101002</div>
+        <div class="signature">Sarono, S.Pd.SD</div>
+        <div class="nip">NIP: 197006121992101002</div>
+        <div class="input-container">
+            <input type="text" placeholder="Masukkan kode verifikasi">
+            <button>Verifikasi</button>
         </div>
     </div>
 </body>
